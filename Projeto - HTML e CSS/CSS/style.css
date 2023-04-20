@@ -1,0 +1,227 @@
+:root
+    {--rosa-escuro: #DB1E8C;
+    --rosa-claro: #FF97D3;
+    --azul-escuro: #33475B;
+    --azul-médio: #0000EE;
+    --azul-claro: #264FEC;
+    --azul-titulo-trilha: #364372;
+    --branco: #FFFFFF;
+    --branco-cinza: #F5F5F5;
+    --preto: #000000;}
+
+*
+    {box-sizing: border-box}
+
+body
+    {background-color: var(--azul-escuro);
+    font-family: 'IBM Plex Sans', sans-serif}
+
+header
+    {background-color: var(--branco);
+    margin-bottom: 17px}
+
+.container-header
+    {justify-content: space-between;
+    padding: 1.042% 16.667%;
+    align-items: center;
+    display: flex;
+    margin: 0 auto}
+
+.titulo-principal
+    {color: var(--azul-médio);
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 31px;
+    margin-left: 24.656%;
+    margin-right: 15.841%}
+
+.label-pesquisa-header
+    {background-color: var(--rosa-escuro);
+    width: 185px;    
+    height: 40px;
+    padding: 8px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center}
+
+.input-pesquisa-header
+    {background-color: transparent;
+    width: 65px;    
+    height: 16px;
+    margin: 4px;
+    border: none}
+
+::placeholder
+    {color: var(--rosa-claro)}
+
+main
+    {display: flex;
+    justify-content: center}
+
+.lista-trilhas
+    {display: flex;
+    flex-wrap: wrap;
+    width: 66.666%;
+    margin: 0 16.667%;
+    margin-bottom: 6.382%}
+
+.unidade-lista
+    {width: 31.25%;
+    margin: 1.563%;
+    margin-bottom: 1.563%;
+    padding: 32px;
+    background-color: var(--branco-cinza);
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between}
+
+.unidade-lista:nth-child(3n)
+    {margin-right: 0}
+
+.unidade-lista:nth-child(3n+1)
+    {margin-left: 0}
+
+.titulo-trilhas
+    {color: var(--azul-titulo-trilha);
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 31px;
+    margin-bottom: 24px}
+
+.paragrafo-trilhas
+    {color: var(--preto);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21px;
+    margin-bottom: 29.09%}
+
+.botao-trilhas
+    {color: var(--azul-claro);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    border: 1px solid var(--azul-claro);
+    border-radius: 4px;
+    padding: 14.74px 18.39px 14.74px 18.38px}
+
+footer
+    {background-color: var(--branco);
+    align-items: center;
+    display: flex}
+
+.container-footer
+    {width: 100%;
+    padding: 1.055% 16.667%;
+    display: flex;
+    justify-content: space-between}
+
+.logos-footer
+    {display: flex;
+    width: 16.6%;
+    justify-content: space-between;
+    align-items: center}
+
+.regulamentos-e-midias-footer
+    {width: 24.926%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    line-height: 18px}
+
+.regulamentos-footer
+    {width: 42.94%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 3.076% 0}
+
+.midias-footer
+    {width: 40.12%;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between}
+
+#midia-footer-grupo-boticario
+    {margin-left: 11.72%;
+    margin-right: 10.94%;
+    margin-top: 11.02%}
+
+
+
+@media screen and (max-width: 1300px)
+    {.container-header
+        {padding: 1.042% 4%}
+
+    .lista-trilhas
+        {width: 92%;
+        margin: 0 4%}
+
+    .unidade-lista
+        {width: 31%;
+        margin: 1.75%;
+        margin-bottom: 1.75%}
+
+    .logos-footer
+        {width: 33%}
+    
+    .regulamentos-e-midias-footer
+        {width: 33%}
+    
+    .regulamentos-footer
+        {width: 10%}
+    
+    .midias-footer
+        {width: 60%}}
+
+
+
+@media screen and (max-width: 800px)
+    {.container-header
+        {flex-direction: column}
+
+    .titulo-principal
+        {margin: 5% 0}
+
+    .lista-trilhas
+        {flex-direction: column;
+        width: initial;
+        margin: initial;
+        margin-bottom: 2%}
+    
+    .unidade-lista
+        {width: 100%;
+        margin: initial;
+        margin-bottom: 1%}
+    
+    .paragrafo-trilhas
+        {margin-bottom: 10%}
+    
+    .container-footer
+        {flex-direction: column;
+        padding: 0;
+        align-items: center}
+
+    .logos-footer
+        {width: 100%;
+        justify-content: space-around;
+        margin: 5%}
+
+    .regulamentos-e-midias-footer
+        {width: 100%;
+        flex-direction: column;
+        font-size: 20px;
+        line-height: 30px}
+    
+    .regulamentos-footer
+        {width: 100%;
+        justify-content: space-around;
+        align-items: center}
+    
+    .midias-footer
+        {width: 100%;
+        flex-direction: column}
+    
+    #midia-footer-grupo-boticario
+        {margin-top: 0}}
