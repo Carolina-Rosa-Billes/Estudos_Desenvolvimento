@@ -56,3 +56,19 @@ enum nome //Cria uma enumeration, como um aray em que os itens podem ser apenas 
         {item 1,
         item 2,
         item 3}
+
+function nome_função () //Cria um decorator, que modifica o comportamento de outra função, retornando no lugar o acontecimento.
+    {return function
+        (target: any,
+        propertyKey: string,
+        descriptor: PropertyDescriptor)
+    {const metodo = descriptor.value;
+    descriptor.value = function (...args:any[])
+        {let retorno = metodo.apply(this, args);
+        acontecimento}
+    return descriptor}}
+
+interface nome_interface //Define propriedades com os tipos já definidos. Cria opções, ao chamar pelo nome da interface.
+    {propriedade_1: tipo_1;
+    propriedade_2: tipo_2;
+    propriedade_3: tipo_3;}
